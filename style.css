@@ -1,0 +1,38 @@
+/* Set the background to a cool hacking-style wallpaper */
+body {
+    background-image: url('https://www.wallpapertip.com/wmimgs/1-1400hacking-wallpaper.jpg'); /* Hacking background */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive; /* Retro font */
+}
+
+/* Style the buttons */
+button {
+    background-color: rgba(0, 255, 0, 0.8); /* Bright green for hacking vibe */
+    color: black;
+    font-size: 16px; /* Smaller font size */
+    padding: 15px 25px; /* Smaller padding */
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Press Start 2P', cursive; /* Same retro font for buttons */
+}
+
+/* Add hover effects to buttons */
+button:hover {
+    background-color: rgba(0, 255, 0, 1);
+    transform: scale(1.1);
+}
+
+/* Center the content */
+.content {
+    text-align: center;
+}
