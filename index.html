@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title> <!-- Title updated to "Homework" with a capital H -->
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <button onclick="openGame('https://link-five.ibewlocalzero.com/')">Open Space</button>
+        <button onclick="openGame('https://rutgerslineup.emtbiceland.is/')">Open Doge Unblocker</button>
+        <button onclick="openGame('https://mass.prep.tanenbaumchat.org/')">Open Utopia</button>
+        <button onclick="openGame('https://web0213.medscience.cl/')">Open Interstellar</button>
+        <button onclick="openGame('https://stfu.espitronica.pt/')">Open About Blank Embedder</button>
+    </div>
+
+    <script>
+        function openGame(url) {
+            // Open Google Drive in a new tab to be seen by GoGuardian
+            var googleDriveTab = window.open("https://drive.google.com/drive/home", "_blank");
+
+            // Open an about:blank page in a new window for cloaking
+            var win = window.open("about:blank", "_blank");
+
+            // Set the title and favicon of the about:blank page to look like Google Drive
+            win.document.title = "Home - Google Drive";
+            var link = win.document.createElement('link');
+            link.rel = "icon";
+            link.href = "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
+            win.document.head.appendChild(link);
+
+            // Create an iframe to load the actual website content (desired content)
+            var iframe = win.document.createElement('iframe');
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.border = "none";
+            iframe.src = url; // Load the target website inside the iframe
+            win.document.body.appendChild(iframe);
+
+            // The iframe is in the about:blank page, but Google Drive tab is visible for GoGuardian
+        }
+    </script>
+</body>
+</html>
